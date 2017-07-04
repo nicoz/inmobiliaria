@@ -13,8 +13,8 @@ gem 'rails', '5.1.0'
 # Comment this gem
 
 # and uncomment the following
-# gem 'pg'
-# gem 'thin'
+gem 'pg'
+gem 'thin'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
