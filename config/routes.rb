@@ -4,6 +4,15 @@ Rails.application.routes.draw do
   # defaults to dashboard
   root :to => "pages#landing"
 
+
+  #MY OWN VIEWS ----------------------------------------------------------------------------------------------
+  get '/ventas' => 'frontend#sales'
+  get '/alquiler' => 'frontend#rent'
+  get '/recientes' => 'frontend#recent'
+  
+  #MY OWN VIEWS END ------------------------------------------------------------------------------------------
+  
+  
   # view routes
   get '/widgets' => 'widgets#index'
   get '/documentation' => 'documentation#index'
