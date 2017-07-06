@@ -520,3 +520,175 @@ body {
 .searchBar > .form-searchBar button:hover {
   background-color: rgba(240,95,64,1);
 }
+
+.home-newest-listings .home-listing-cards {
+  margin: 0 auto;
+}
+
+.home-newest-listings .home-listing-cards>.row.active {
+  margin-top: 10px;
+  max-height: 900px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.home-newest-listings .home-listing-cards>.row {
+    overflow: hidden;
+    max-height: 0;
+    text-align: center;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.home-newest-listings .home-listing-cards>.row>[class^="listing-"] {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    text-align: left;
+    margin: 0 -2px;
+}
+
+.row.gutter-sm>[class^="col-"], .row.gutter-sm>[class*=" col-"] {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.row.gutter-sm {
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+.listing-card-stacked:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 54.25%;
+}
+
+.listing-card, .listing-card-filled, .listing-card-stacked {
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.listing-card-stacked {
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    overflow: hidden;
+    padding-bottom: 80px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.listing-card-stacked>.aspect-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.listing-card-stacked .aspect-content {
+    bottom: 80px;
+}
+.listing-card-stacked .listing-photo {
+    height: 115%;
+    width: 115%;
+}
+
+.listing-card .listing-photo, .listing-card-filled .listing-photo, .listing-card-stacked .listing-photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.listing-card-stacked .listing-info {
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #fff;
+    pointer-events: none;
+}
+
+.home-newest-listings .home-listing-cards .row [class^="listing-"] {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    text-align: left;
+    margin: 0 -2px;
+}
+
+.listing-card-stacked .listing-photo a {
+  margin-left: -10%
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.listing-card-stacked .listing-info .property-meta {
+    font-size: 12px;
+}
+
+.list-unstyled, .list-horizontal {
+    padding-left: 0;
+    list-style: none;
+}
+
+.listing-card-stacked .listing-info .property-meta>li {
+    margin-bottom: 0;
+}
+
+.listing-card .listing-info .listing-info-price, .listing-card-filled .listing-info .listing-info-price, .listing-card-stacked .listing-info .listing-info-price {
+    font-weight: 700;
+    position: relative;
+    font-size: 18px;
+}
+
+.listing-card-stacked .listing-info .property-meta>li {
+    margin-bottom: 0;
+}
+
+.listing-card-stacked .listing-info .listing-info-address {
+    width: 90%;
+}
+
+.ellipsis {
+    display: block;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.listing-card-stacked .listing-info .property-meta>li {
+    margin-bottom: 0;
+}
+
+.listing-card-stacked .listing-info .property-meta {
+    font-size: 12px;
+}
+
+.list-horizontal>li:first-child {
+    margin-left: 0;
+}
+
+.list-horizontal>li {
+    float: left;
+    display: inline;
+    margin-left: 5px;
+}
+
+.closer-section {
+  padding-top: 0px;
+}
