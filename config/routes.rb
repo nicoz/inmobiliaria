@@ -10,6 +10,14 @@ Rails.application.routes.draw do
   get '/alquiler' => 'frontend#rent'
   get '/recientes' => 'frontend#recent'
   
+  get '/casas' => 'frontend#all_houses'
+  get '/apartamentos' => 'frontend#all_apartments'
+  get '/lista_ventas' => 'frontend#all_sales'
+  get '/lista_alquileres' => 'frontend#all_rents'
+  
+  get '/propiedad/:id' => 'frontend#house_detail'
+  
+  
   #MY OWN VIEWS END ------------------------------------------------------------------------------------------
   
   

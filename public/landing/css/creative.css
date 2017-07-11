@@ -207,16 +207,22 @@ header.recent-header {
   background-image: url('../img/recent-header.jpg') !important;
 }
 
+header.detail-header {
+  background-image: none !important;
+  background-color: white;
+}
+
 header .dark-overlay {
   width: 100%;
-    background-color: rgba(0,0,0,0.3);
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 5px;
-    position: absolute;  
+  background-color: rgba(0,0,0,0.3);
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 5px;
+  position: absolute;  
 }
+
 
 header .header-content {
   position: relative;
@@ -240,7 +246,35 @@ header .header-content .header-content-inner p {
   font-size: 16px;
   margin-bottom: 50px;
 }
+
+header.detail-header .header-content {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+}
+
+header.detail-header .header-content {
+  position: absolute;
+  top: 0;
+  padding: 0 0;
+}
+header.detail-header .header-content .header-content-inner {
+  max-width: 100%;
+  
+}
+
+.detail-carousel {
+  margin-top: 60px;
+}
+
 @media (min-width: 768px) {
+
+  .detail-carousel {
+    margin-top: 0px;
+  }
+  
   header {
     min-height: 100%;
   }
@@ -269,6 +303,15 @@ header .header-content .header-content-inner p {
   .sales-header, .rent-header, .recent-header {
     min-height: 65%;
   }
+  
+  header.detail-header .header-content {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+  }
+
 }
 .section-heading {
   margin-top: 0;
@@ -691,4 +734,23 @@ body {
 
 .closer-section {
   padding-top: 0px;
+}
+
+.list-group li {
+    list-style: none;
+}
+.panel-info, .panel-rating, .panel-more1 {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+.detail-house h3 {
+  color: #F05F40;
+}
+
+#map {
+height: 400px;
+width: 100%;
 }

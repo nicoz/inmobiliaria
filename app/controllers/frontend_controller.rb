@@ -10,4 +10,8 @@ class FrontendController < ApplicationController
   def recent
   end
   
+  def house_detail
+  
+  end
+  
 end
